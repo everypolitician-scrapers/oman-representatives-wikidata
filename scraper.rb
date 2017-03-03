@@ -9,5 +9,8 @@ en = WikiData::Category.new('Category:Omani politicians', 'en').member_titles |
      WikiData::Category.new('Category:Foreign ministers of Oman', 'en').member_titles |
      WikiData::Category.new('Category:Members of the Consultative Assembly of Oman', 'en').member_titles
 
-EveryPolitician::Wikidata.scrape_wikidata(names: { en: en })
+ar = WikiData::Category.new('تصنيف:سياسيون عمانيون', 'ar').member_titles |
+     WikiData::Category.new('تصنيف:وزراء عمانيون', 'ar').member_titles
+
+EveryPolitician::Wikidata.scrape_wikidata(names: { en: en, ar: ar })
 
